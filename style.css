@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto&family=Share+Tech+Mono&display=swap');
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: url('/images/afterTech.jpeg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: 'Share Tech Mono', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.7s ease-in;
+}
+
+nav h1{
+    font-size: 2rem;
+    transform: skew(5deg, 5deg);
+    box-shadow: 0 0 0 0 #000;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+nav ul li{
+    margin-left: 20px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    transform: scale(1.2);
+    transition: transform 0.5S ease-in-out;
+    border-bottom: 1px solid white;
+}
+
+header .join{
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    background-color:rgba(39, 189, 245, 0.4) ;
+    position: absolute;
+    top: 50%;
+}
+
+header .join p{
+    margin-bottom: 15px;
+    font-size: 1.7rem;
+    color: white;
+    font-family: 'Share Tech Mono', sans-serif;
+    transition: transform 1s ease-in-out;
+}
+
+header .join p:hover{
+    transform: scale(1.2) translate(-10%, -10%);
+}
+
+header .join button{
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: rgba(39, 189, 245, 0.4);
+    color: white;
+    border: 2px inset white;
+    outline: none;
+    font-size: 1rem;
+    transition: transform 1s ease-in;
+    cursor: pointer;
+}
+
+header .join button:hover{
+    transform: rotateY(360deg);
+}
+
+@media screen and (max-width: 660px) {
+    nav{
+        flex-direction: column;
+        height: 20vh;
+    }
+
+    nav ul li{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    nav ul li{
+        font-size: 8px;
+    }
+}
+
+hr{
+    border: 2px dashed royalblue;
+}
+
+/* FOOTER */
+
+footer{
+    background-image: linear-gradient(0deg, transparent 0%, transparent 58%,rgba(104, 104, 104,0.05) 58%, rgba(104, 104, 104,0.05) 92%,transparent 92%, transparent 100%),linear-gradient(45deg, transparent 0%, transparent 34%,rgba(104, 104, 104,0.05) 34%, rgba(104, 104, 104,0.05) 77%,transparent 77%, transparent 100%),linear-gradient(0deg, transparent 0%, transparent 33%,rgba(104, 104, 104,0.05) 33%, rgba(104, 104, 104,0.05) 53%,transparent 53%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+    padding: 20px;
+}
+
+footer .columns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .columns .column{
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.column p:hover{
+    color: royalblue;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 400px) {
+    .columns{
+        flex-direction: column;
+    }
+
+    .column{
+        text-align: center;
+        margin: 10px 0;
+    }
+}
